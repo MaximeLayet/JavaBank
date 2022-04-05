@@ -8,10 +8,9 @@ import java.util.Scanner;
 public class Entry {
     public static void main(String[] args){
 
-        ComptePayant cp = new ComptePayant(50);
-
-        cp.verser(10);
-        System.out.println(cp.countAmount());
+        Compte c = new Compte(100);
+        c.retirer(50);
+        System.out.println(c.countAmount());
 
 
 //        Compte c = new Compte( 500);

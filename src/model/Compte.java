@@ -26,7 +26,12 @@ public class Compte {
     }
 
     public void retirer(float retrait){
+        if (solde < retrait){
+            System.out.println("Montant insuffisant, entrer un autre monatant");
+        } else {
         this.setSolde((this.solde - retrait));
+            System.out.println("Retrait de " + retrait + "€ autorisé");
+        }
     }
 
     public int getId() {
